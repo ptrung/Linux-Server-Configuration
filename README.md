@@ -20,10 +20,10 @@ This projects descripes the baseline installation of a Linux server for hosting 
 `sudo apt-get upgrade`
 
 ### Configurate SSH Port and Firwall
-1. To change the SSH Port: `sudo nano /etc/ssh/sshd_config` and change Port 22 to 2200
+1. To change the SSH Port: `sudo nano /etc/ssh/sshd_config` and change Port 22 to 2200 and change PermitRootLogin to no
 2. Reload SSH with `sudo service ssh restart`
 3. Go to the *network* configuration of your Lightsail server and change the ports of the firewall to TCP/80, TCP/2200 and UDP/123.
-3. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123): 
+4. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123): 
 `sudo ufw allow 2200/tcp`
 `sudo ufw allow 80/tcp`
 `sudo ufw allow 123/udp`
