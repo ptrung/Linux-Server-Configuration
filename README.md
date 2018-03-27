@@ -4,7 +4,7 @@ This projects descripes the baseline installation of a Linux server for hosting 
 
 * IP-Adress: 18.184.11.54
 * Port: 2200
-* URL: http://ec2-18-184-11-54.eu-central-1.compute.amazonaws.com/login/
+* URL: http://ec2-18-184-11-54.eu-central-1.compute.amazonaws.com/
 
 ## Walkthrough
 ### Get and access the server
